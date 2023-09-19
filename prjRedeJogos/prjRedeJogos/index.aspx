@@ -1,0 +1,117 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="prjRedeJogos.index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Noto+Sans+Meroitic&display=swap">
+
+
+    <link href="style.css" rel="stylesheet" />
+    <title>Rede Jogos</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <img src="images/logo.png" />
+            <input type="text" placeholder=" Pesquisar" />
+            <section id="login">
+             <a href="entrar">Entrar</a>
+             <img src="images/logo.png" class="imagem"/>
+            </section>
+        </header>
+
+         <h2 class="perfil">Perfis em Destaque</h2>
+       <section>
+           <div class="divisao">
+                   
+               <img src="images/icon.png"/>
+               <div class="borda">
+                   <asp:Literal ID="LitNomeEDesc1" runat="server"></asp:Literal>
+               </div>
+           </div>
+          
+           
+           <div class="divisao">
+                <img src="images/icon.png"/>
+                <div class="borda">
+                   <asp:Literal ID="LitNomeEDesc2" runat="server"></asp:Literal>
+                </div>
+           </div>
+           
+           <div class="divisao">
+               <img src="images/icon.png"/>
+               <div class="borda">
+                    <asp:Literal ID="LitNomeEDesc3" runat="server"></asp:Literal>
+                </div>
+           </div>
+
+   
+           <div class="divisao">
+              <img src="images/icon.png"/>
+               <div class="borda">
+                    <asp:Literal ID="LitNomeEDesc4" runat="server"></asp:Literal>
+                </div>
+           </div>
+
+            
+           <div class="divisao">
+              <img src="images/icon.png"/>
+               <div class="borda">
+                    <asp:Literal ID="LitNomeEDesc5" runat="server"></asp:Literal>
+               </div>
+           </div>
+       </section>
+
+
+          <h2 class="jogos">Jogos em Destaque</h2>
+       <section>
+           <div class="divisao">
+               <img src="images/overwatch2.jpg"/>
+               <div class="borda">
+               <p>Overwath 2</p>                  
+               <p>Lorem</p>
+                </div>
+           </div>
+          
+           
+           <div class="divisao">
+                <img src="images/deadSpace.jpg"/>
+               <div class="borda">
+               <p>Dead Space 3</p>                 
+               <p>Lorem</p>
+                </div>
+           </div>
+           
+           <div class="divisao">
+               <img src="images/valorant.jpg"/>
+               <div class="borda">
+               <p>Valorant</p>                  
+               <p>Lorem</p>
+                </div>
+           </div>
+
+   
+           <div class="divisao">
+              <img src="images/fortnite.jpg"/>
+               <div class="borda">
+               <p>Fortnite</p>
+               <p>Lorem</p>
+                </div>
+           </div>
+            
+           <div class="divisao">
+              <img src="images/left4dead.jpg"/>
+                <div class="borda">
+                   <p>Left 4 Dead</p>
+                   <p>Lorem</p>
+                </div>
+           </div>
+       </section>
+    </form>
+</body>
+</html>

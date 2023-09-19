@@ -1,0 +1,107 @@
+﻿* {
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Noto Sans Meroitic', sans-serif;
+}
+
+body
+{
+    margin-left: 64px;
+    margin-right: 64px;
+    padding: 0px;
+    background-image: url('images/fundo.png');
+}
+
+section
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.divisao
+{
+    margin-left: 30px;
+}
+
+perfil
+{
+    position: relative;
+    right: 497px;
+    top: 10px
+}
+
+#login
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+img
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 67px;
+    margin-right: 67px;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+p
+{
+    text-align: center;
+    color: white;
+}
+
+input
+{
+    border-radius: 5px;
+    border: none;
+    width: 20%;
+    height: 25px;
+}
+
+.perfil-rating
+{
+    display: flex;
+    align-items: center;
+}
+
+.estrelas
+{
+    color: gold;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.estrela
+{
+    margin-right: 5px; 
+}
+
+button
+{
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer;
+}
+
+button i
+{
+        margin-right: 5px; 
+        color: white; 
+}
+
+h2
+{
+color: white;
+text-align: center;
+}
