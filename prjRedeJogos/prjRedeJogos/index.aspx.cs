@@ -11,9 +11,10 @@ namespace prjRedeJogos
 {
     public partial class index : System.Web.UI.Page
     {
+        string linhadeconexao = "SERVER=localhost;UID=root;PASSWORD=root;DATABASE=app_jogos_37277";
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            string linhadeconexao = "SERVER=localhost;UID=root;PASSWORD=root;DATABASE=app_jogos";
             MySqlConnection conexao = new MySqlConnection(linhadeconexao);
             try
             {
@@ -21,19 +22,28 @@ namespace prjRedeJogos
                 string comando = "Select nm_apelido, ds_usuario from usuario order by nm_usuario asc";
                 MySqlCommand cSQL = new MySqlCommand(comando, conexao);
                 MySqlDataReader dados = cSQL.ExecuteReader();
-                while (dados.Read())
+                if (dados.HasRows)
                 {
-                    LitNomeEDesc1.Text += dados.GetString(0);
-                    LitNomeEDesc2.Text += dados.GetString(0);
-                    LitNomeEDesc3.Text += dados.GetString(0);
-                    LitNomeEDesc4.Text += dados.GetString(0);
-                    LitNomeEDesc5.Text += dados.GetString(0);
+                    while (dados.Read())
+                    {
+                        litUsuarios.Text += $@"
+                        <div class='divisao'>
+                           <img src='images/icon.png'/>
+                            <div class='borda'>
+                               <h2>{dados.GetString("nm_apelido")}<h2/>
+                                <p>{dados.GetString("ds_usuario")}</p>
+                           </div>
+                       </div>";
+                    }
                 }
+                if (!dados.IsClosed)
+                    dados.Close();
             }
             catch
             {
+                throw new Exception("Não foi possivel fazer a consulta de Usuários");
             }
-            conexao.Close();
+            finally { conexao.Close(); }
         }
     }
 }

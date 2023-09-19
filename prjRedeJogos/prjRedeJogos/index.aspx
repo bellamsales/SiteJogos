@@ -27,44 +27,14 @@
 
          <h2 class="perfil">Perfis em Destaque</h2>
        <section>
-           <div class="divisao">
+           <%--<div class="divisao">
                    
                <img src="images/icon.png"/>
                <div class="borda">
                    <asp:Literal ID="LitNomeEDesc1" runat="server"></asp:Literal>
                </div>
-           </div>
-          
-           
-           <div class="divisao">
-                <img src="images/icon.png"/>
-                <div class="borda">
-                   <asp:Literal ID="LitNomeEDesc2" runat="server"></asp:Literal>
-                </div>
-           </div>
-           
-           <div class="divisao">
-               <img src="images/icon.png"/>
-               <div class="borda">
-                    <asp:Literal ID="LitNomeEDesc3" runat="server"></asp:Literal>
-                </div>
-           </div>
-
-   
-           <div class="divisao">
-              <img src="images/icon.png"/>
-               <div class="borda">
-                    <asp:Literal ID="LitNomeEDesc4" runat="server"></asp:Literal>
-                </div>
-           </div>
-
-            
-           <div class="divisao">
-              <img src="images/icon.png"/>
-               <div class="borda">
-                    <asp:Literal ID="LitNomeEDesc5" runat="server"></asp:Literal>
-               </div>
-           </div>
+           </div>--%>
+          <asp:Literal ID="litUsuarios" runat="server"></asp:Literal>
        </section>
 
 
