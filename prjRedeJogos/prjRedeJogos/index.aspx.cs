@@ -7,12 +7,12 @@ using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI;
 
+
 namespace prjRedeJogos
 {
-    public partial class index : System.Web.UI.Page
+    public partial class index1 : System.Web.UI.Page
     {
         string linhadeconexao = "SERVER=localhost;UID=root;PASSWORD=root;DATABASE=app_jogos_37277";
-
         protected void Page_Load(object sender, EventArgs e)
         {
             MySqlConnection conexao = new MySqlConnection(linhadeconexao);
@@ -46,4 +46,5 @@ namespace prjRedeJogos
             finally { conexao.Close(); }
         }
     }
+    
 }
