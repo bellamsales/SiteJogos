@@ -179,7 +179,8 @@ Insert into rank (cd_rank, nm_rank) values ('213','Platina');
 
 Insert into jogo (cd_jogo, nm_jogo, ds_sinopse, aa_lancamento, cd_desenvolvedor, cd_tipo_jogo) values ('657','League of Legends','Lorem Ipsum is simply dummy text of the printing and typesetting industry.','2009','785','782');
 Insert into jogo (cd_jogo, nm_jogo, ds_sinopse, aa_lancamento, cd_desenvolvedor, cd_tipo_jogo) values ('567','Mario','Lorem Ipsum is simply dummy text of the printing and typesetting industry.','2010','433','2135');
-Insert into jogo (cd_jogo, nm_jogo, ds_sinopse, aa_lancamento, cd_desenvolvedor, cd_tipo_jogo) values ('987','Futuristica','Lorem Ipsum is simply dummy text of the printing and typesetting industry.','1986','576','546');
+Insert into jogo (cd_jogo, nm_jogo, ds_sinopse, aa_lancamento, cd_desenvolvedor, cd_tipo_jogo) values ('987','CyberPunk','Lorem Ipsum is simply dummy text of the printing and typesetting industry.','1986','576','546');
+Insert into jogo (cd_jogo, nm_jogo, ds_sinopse, aa_lancamento, cd_desenvolvedor, cd_tipo_jogo) values ('536','Sally Face','Lorem Ipsum is simply dummy text of the printing and typesetting industry.','2016','576','2135');
 
 Insert into jogo_genero (cd_jogo, cd_genero) values ('657','469');
 Insert into jogo_genero (cd_jogo, cd_genero) values ('567','468');
@@ -223,5 +224,6 @@ Select * from favorito order by nm_email_favoritado;
 Select nm_email, nm_email_avaliador, cd_tipo_avaliacao from avaliacao order by cd_tipo_avaliacao;
 Select * from tipo_avaliacao order by cd_tipo_avaliacao;
 Select cd_jogo, cd_plataforma, nm_apelido_jogo from biblioteca order by cd_jogo;
+Select nm_jogo from jogo order by nm_jogo asc
 
 /*Descritivo (por gentileza, cole os códigos do Descritivo aqui :D )*/

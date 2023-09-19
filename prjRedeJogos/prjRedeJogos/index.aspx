@@ -39,48 +39,15 @@
 
 
           <h2 class="jogos">Jogos em Destaque</h2>
-       <section>
-           <div class="divisao">
-               <img src="images/overwatch2.jpg"/>
-               <div class="borda">
-               <p>Overwath 2</p>                  
-               <p>Lorem</p>
-                </div>
-           </div>
-          
-           
-           <div class="divisao">
-                <img src="images/deadSpace.jpg"/>
-               <div class="borda">
-               <p>Dead Space 3</p>                 
-               <p>Lorem</p>
-                </div>
-           </div>
-           
-           <div class="divisao">
-               <img src="images/valorant.jpg"/>
-               <div class="borda">
-               <p>Valorant</p>                  
-               <p>Lorem</p>
-                </div>
-           </div>
-
-   
-           <div class="divisao">
-              <img src="images/fortnite.jpg"/>
-               <div class="borda">
-               <p>Fortnite</p>
-               <p>Lorem</p>
-                </div>
-           </div>
-            
-           <div class="divisao">
+       <section>            
+<%--           <div class="divisao">
               <img src="images/left4dead.jpg"/>
                 <div class="borda">
                    <p>Left 4 Dead</p>
                    <p>Lorem</p>
                 </div>
-           </div>
+           </div>--%>
+           <asp:Literal ID="litJogos" runat="server"></asp:Literal>
        </section>
     </form>
 </body>

@@ -44,6 +44,37 @@ namespace prjRedeJogos
                 throw new Exception("Não foi possivel fazer a consulta de Usuários");
             }
             finally { conexao.Close(); }
+
+
+            //Lit de Jogos
+            try
+            {
+                conexao.Open();
+                string comando = "Select nm_jogo, cd_jogo from jogo order by nm_jogo asc";
+                MySqlCommand cSQL = new MySqlCommand(comando, conexao);
+                MySqlDataReader dados = cSQL.ExecuteReader();
+                if (dados.HasRows)
+                {
+                    while (dados.Read())
+                    {
+                        litJogos.Text += $@"
+                        <div class='divisao'>
+                            <img src='images/{dados.GetInt32("cd_jogo")}.jpg'/>
+                                <div class='borda'>
+                                    <p>{dados.GetString("nm_jogo")}</p>
+                                </div>
+                        </div>";
+                    }
+                }
+                if (!dados.IsClosed)
+                    dados.Close();
+            }
+            catch
+            {
+                throw new Exception("Não foi possivel fazer a consulta de Jogos");
+            }
+            finally { conexao.Close(); }
+
         }
     }
     
