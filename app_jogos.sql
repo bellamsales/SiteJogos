@@ -181,6 +181,7 @@ Insert into jogo (cd_jogo, nm_jogo, ds_sinopse, aa_lancamento, cd_desenvolvedor,
 Insert into jogo (cd_jogo, nm_jogo, ds_sinopse, aa_lancamento, cd_desenvolvedor, cd_tipo_jogo) values ('567','Mario','Lorem Ipsum is simply dummy text of the printing and typesetting industry.','2010','433','2135');
 Insert into jogo (cd_jogo, nm_jogo, ds_sinopse, aa_lancamento, cd_desenvolvedor, cd_tipo_jogo) values ('987','CyberPunk','Lorem Ipsum is simply dummy text of the printing and typesetting industry.','1986','576','546');
 Insert into jogo (cd_jogo, nm_jogo, ds_sinopse, aa_lancamento, cd_desenvolvedor, cd_tipo_jogo) values ('536','Sally Face','Lorem Ipsum is simply dummy text of the printing and typesetting industry.','2016','576','2135');
+Insert into jogo (cd_jogo, nm_jogo, ds_sinopse, aa_lancamento, cd_desenvolvedor, cd_tipo_jogo) values ('710','Limbo','Lorem Ipsum is simply dummy text of the printing and typesetting industry.','2010','433','2135');
 
 Insert into jogo_genero (cd_jogo, cd_genero) values ('657','469');
 Insert into jogo_genero (cd_jogo, cd_genero) values ('567','468');

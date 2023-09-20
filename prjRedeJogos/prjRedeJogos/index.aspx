@@ -1,13 +1,14 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="prjRedeJogos.index1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="prjRedeJogos.index" %>
+
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<html xmlns="http://www.w3.org/1999/xhtml"/>
+<head runat="server"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Noto+Sans+Meroitic&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Noto+Sans+Meroitic&display=swap"/>
 
 
     <link href="style.css" rel="stylesheet" />
@@ -17,17 +18,16 @@
     <form id="form1" runat="server">
        
         <header>
-            <img src="images/logo.png" />
+            <a href="index.aspx"><img src="images/logo.png"/></a>
             <input type="text" placeholder=" Pesquisar" />
             <section id="login">
-             <a href="entrar">Entrar</a>
-             <img src="images/logo.png" class="imagem"/>
+             <a href="entrar"><p class="linkagem">Entrar</p></a>
             </section>
         </header>
 
          <h2 class="perfil">Perfis em Destaque</h2>
        <section>
-           <%--<div class="divisao">
+           <%--<div class="divisao1">
                    
                <img src="images/icon.png"/>
                <div class="borda">
@@ -40,7 +40,7 @@
 
           <h2 class="jogos">Jogos em Destaque</h2>
        <section>            
-<%--           <div class="divisao">
+<%--           <div class="divisao2">
               <img src="images/left4dead.jpg"/>
                 <div class="borda">
                    <p>Left 4 Dead</p>

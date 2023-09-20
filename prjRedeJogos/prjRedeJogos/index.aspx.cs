@@ -10,12 +10,15 @@ using MySqlX.XDevAPI;
 
 namespace prjRedeJogos
 {
-    public partial class index1 : System.Web.UI.Page
+    public partial class index : System.Web.UI.Page
     {
         string linhadeconexao = "SERVER=localhost;UID=root;PASSWORD=root;DATABASE=app_jogos_37277";
+
         protected void Page_Load(object sender, EventArgs e)
         {
             MySqlConnection conexao = new MySqlConnection(linhadeconexao);
+
+            //Lit de Usuários
             try
             {
                 conexao.Open();
@@ -27,7 +30,7 @@ namespace prjRedeJogos
                     while (dados.Read())
                     {
                         litUsuarios.Text += $@"
-                        <div class='divisao'>
+                        <div class='divisao1'>
                            <img src='images/icon.png'/>
                             <div class='borda'>
                                <h2>{dados.GetString("nm_apelido")}<h2/>
@@ -58,7 +61,7 @@ namespace prjRedeJogos
                     while (dados.Read())
                     {
                         litJogos.Text += $@"
-                        <div class='divisao'>
+                        <div class='divisao2'>
                             <img src='images/{dados.GetInt32("cd_jogo")}.jpg'/>
                                 <div class='borda'>
                                     <p>{dados.GetString("nm_jogo")}</p>
@@ -77,5 +80,4 @@ namespace prjRedeJogos
 
         }
     }
-    
 }
