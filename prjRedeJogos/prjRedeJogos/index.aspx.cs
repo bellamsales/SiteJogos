@@ -7,10 +7,9 @@ using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI;
 
-
 namespace prjRedeJogos
 {
-    public partial class index1 : System.Web.UI.Page
+    public partial class index : System.Web.UI.Page
     {
         string linhadeconexao = "SERVER=localhost;UID=root;PASSWORD=root;DATABASE=app_jogos_37277";
         protected void Page_Load(object sender, EventArgs e)
@@ -29,10 +28,10 @@ namespace prjRedeJogos
                     while (dados.Read())
                     {
                         litUsuarios.Text += $@"
-                        <div class='divisao1'>
-                           <img src='images/icon.png'/>
+                        <div class='DivisaoUsuario'>
+                           <img src='images/icon.png'/ class='iconperfil'>
                             <div class='borda'>
-                               <h2>{dados.GetString("nm_apelido")}<h2/>
+                               <h3>{dados.GetString("nm_apelido")}<h3/>
                                 <p>{dados.GetString("ds_usuario")}</p>
                            </div>
                        </div>";
@@ -60,7 +59,7 @@ namespace prjRedeJogos
                     while (dados.Read())
                     {
                         litJogos.Text += $@"
-                        <div class='divisao2'>
+                        <div class='DivisaoJogos'>
                             <img src='images/{dados.GetInt32("cd_jogo")}.jpg'/>
                                 <div class='borda'>
                                     <p>{dados.GetString("nm_jogo")}</p>
