@@ -11,7 +11,7 @@ namespace prjRedeJogos
 {
 
 
-    public partial class index
+    public partial class index1
     {
 
         /// <summary>

@@ -1,6 +1,5 @@
 ﻿* {
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Noto Sans Meroitic', sans-serif;
+    font-family: 'Mooli', sans-serif;
 }
 
 body {
@@ -11,16 +10,28 @@ body {
     font-size: 15px;
 }
 
-section
-{
+header {
+    background-color: #9fd2fc;
+/*    display: flex;
+    justify-content: space-around;
+    align-items: center;
+*/}
+
+.logo {
+    margin-left: 133px;
+    margin-bottom: -136px;
+}
+
+section {
     display: flex;
     justify-content: center;
     margin-top: 22px;
 }
 
-.linkagem
-{
-
+.linkagem {
+    padding-left: 1178px;
+    /* margin-bottom: -75px; */
+    margin-top: -54px;
 }
 
 .divisao1 
@@ -29,6 +40,7 @@ section
     margin-right: 30px;
     padding-bottom: 5px;
     background-color: #c55d8a;
+    border-radius: 5px;
 }
 
 .divisao2
@@ -58,14 +70,6 @@ img
     margin-left: 67px;
     margin-right: 67px;
 }
-
-header
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 
 p
 {
