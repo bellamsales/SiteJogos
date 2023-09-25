@@ -37,9 +37,13 @@ section {
     margin-top: -47px;
 }
 
-.H2DoUsuario
-{
-    margin-top: 38px;
+.H2DoUsuario {
+    margin-top: 53px;
+}
+
+.Favoritos{
+    width: 20%;
+    margin-left: 20px;
 }
 
 .iconperfil {

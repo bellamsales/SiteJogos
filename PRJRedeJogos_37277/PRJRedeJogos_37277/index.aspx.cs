@@ -7,9 +7,9 @@ using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI;
 
-namespace prjRedeJogos
+namespace PRJRedeJogos_37277
 {
-    public partial class index : System.Web.UI.Page
+    public partial class WebForm2 : System.Web.UI.Page
     {
         string linhadeconexao = "SERVER=localhost;UID=root;PASSWORD=root;DATABASE=app_jogos_37277";
         protected void Page_Load(object sender, EventArgs e)
@@ -29,8 +29,9 @@ namespace prjRedeJogos
                     {
                         litUsuarios.Text += $@"
                         <div class='DivisaoUsuario'>
+                           <img src='images/bandeira.png'/ class='Favoritos'>
                            <img src='images/icon.png'/ class='iconperfil'>
-                            <div class='borda'>
+                            <div class='FundoUsuario'>
                                <h3>{dados.GetString("nm_apelido")}<h3/>
                                 <p>{dados.GetString("ds_usuario")}</p>
                            </div>
@@ -61,9 +62,7 @@ namespace prjRedeJogos
                         litJogos.Text += $@"
                         <div class='DivisaoJogos'>
                             <img src='images/{dados.GetInt32("cd_jogo")}.jpg'/>
-                                <div class='borda'>
-                                    <p>{dados.GetString("nm_jogo")}</p>
-                                </div>
+                                <p>{dados.GetString("nm_jogo")}</p>
                         </div>";
                     }
                 }
@@ -75,7 +74,6 @@ namespace prjRedeJogos
                 throw new Exception("Não foi possivel fazer a consulta de Jogos");
             }
             finally { conexao.Close(); }
-
         }
     }
 }

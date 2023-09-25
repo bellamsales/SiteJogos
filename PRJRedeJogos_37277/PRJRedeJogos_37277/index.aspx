@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="prjRedeJogos.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="PRJRedeJogos_37277.WebForm2" %>
 
 
 <!DOCTYPE html>
@@ -9,8 +9,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
-    
-        <link href="style.css" rel="stylesheet" />
+        <link href="frufru.css" rel="stylesheet"/>
+
             <title>Rede Jogos</title>
     </head>
     <body>
@@ -29,7 +29,7 @@
                <%--<div class="divisao1">
                    
                    <img src="images/icon.png"/>
-                   <div class="borda">
+                   <div class="fundousuario">
                        <asp:Literal ID="LitNomeEDesc1" runat="server"></asp:Literal>
                    </div>
                </div>--%>
