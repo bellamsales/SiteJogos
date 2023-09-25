@@ -1,19 +1,18 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="PRJRedeJogos_37277.WebForm2" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="PRJRedeJogos_37277.index" %>
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml"/>
-    <head runat="server"/>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
         <link href="frufru.css" rel="stylesheet"/>
-
             <title>Rede Jogos</title>
-    </head>
-    <body>
+</head>
+<body>
         <form id="form1" runat="server">
        
             <header>
@@ -35,6 +34,7 @@
                </div>--%>
                <asp:Literal ID="litUsuarios" runat="server"></asp:Literal>
            </section>
+            <img src="images/reticencias.png" class="Pontinhos"/>
 
 
               <h2 class="jogos">Jogos em Destaque</h2>
@@ -48,6 +48,8 @@
                </div>--%>
                <asp:Literal ID="litJogos" runat="server"></asp:Literal>
            </section>
+           <img src="images/reticencias.png" class="Pontinhos"/>
+
         </form>
-    </body>
+</body>
 </html>

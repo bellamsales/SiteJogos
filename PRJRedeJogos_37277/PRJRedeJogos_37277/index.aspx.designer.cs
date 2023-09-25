@@ -11,7 +11,7 @@ namespace PRJRedeJogos_37277
 {
 
 
-    public partial class WebForm2
+    public partial class index
     {
 
         /// <summary>

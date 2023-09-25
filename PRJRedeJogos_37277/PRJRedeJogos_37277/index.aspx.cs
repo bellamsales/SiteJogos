@@ -7,9 +7,10 @@ using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI;
 
+
 namespace PRJRedeJogos_37277
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class index : System.Web.UI.Page
     {
         string linhadeconexao = "SERVER=localhost;UID=root;PASSWORD=root;DATABASE=app_jogos_37277";
         protected void Page_Load(object sender, EventArgs e)
@@ -31,11 +32,16 @@ namespace PRJRedeJogos_37277
                         <div class='DivisaoUsuario'>
                            <img src='images/bandeira.png'/ class='Favoritos'>
                            <img src='images/icon.png'/ class='iconperfil'>
-                            <div class='FundoUsuario'>
                                <h3>{dados.GetString("nm_apelido")}<h3/>
-                                <p>{dados.GetString("ds_usuario")}</p>
-                           </div>
-                       </div>";
+                                <p class='txtUsuario'>{dados.GetString("ds_usuario")}</p>
+                                <div class='Estrelinhas'>
+                                    <img src='images/estrela.png' class='FotoEstrelinha'/>
+                                    <img src='images/estrela.png' class='FotoEstrelinha'/>
+                                    <img src='images/estrela.png' class='FotoEstrelinha'/>
+                                    <img src='images/estrela.png' class='FotoEstrelinha'/>
+                                    <img src='images/estrela.png' class='FotoEstrelinha'/>
+                                </div>
+                        </div>";
                     }
                 }
                 if (!dados.IsClosed)

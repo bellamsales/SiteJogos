@@ -156,6 +156,8 @@ references rank (cd_rank)
 Insert Into usuario (nm_email, nm_usuario, nm_apelido, ds_usuario, nm_senha) values ('joaozinho223@gmail.com','João','joazinho_reidelas','Lorem Ipsum is simply dummy text of the printing and typesetting industry.','#Juao2009');
 Insert Into usuario (nm_email, nm_usuario, nm_apelido, ds_usuario, nm_senha) values ('mariaeduarda2645@gmail.com','Maria Eduarda','batata_assada','Lorem Ipsum is simply dummy text of the printing and typesetting industry.','mariaeduarda');
 Insert Into usuario (nm_email, nm_usuario, nm_apelido, ds_usuario, nm_senha) values ('analuisaprevidissl@gmail.com','Ana','alprevidi','Lorem Ipsum is simply dummy text of the printing and typesetting industry.','analuisaprevidi');
+Insert Into usuario (nm_email, nm_usuario, nm_apelido, ds_usuario, nm_senha) values ('supergu10@gmail.com','Gustavo','namorado_da_mabella','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum pirirí pororó','gugupoderoso');
+Insert Into usuario (nm_email, nm_usuario, nm_apelido, ds_usuario, nm_senha) values ('gustavorsmelo@gmail.com','Gustavo','gustavo_reidelas','Lorem Ipsum is simply dummy text of the printing and typesetting industry.','gugu');
 
 Insert into plataforma (cd_plataforma, nm_plataforma) values ('001','Steam');
 Insert into plataforma (cd_plataforma, nm_plataforma) values ('967','Orangutango');
