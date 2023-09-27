@@ -7,10 +7,9 @@ using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI;
 
-
 namespace PRJRedeJogos_37277
 {
-    public partial class index : System.Web.UI.Page
+    public partial class index1 : System.Web.UI.Page
     {
         string linhadeconexao = "SERVER=localhost;UID=root;PASSWORD=root;DATABASE=app_jogos_37277";
         protected void Page_Load(object sender, EventArgs e)
@@ -32,7 +31,7 @@ namespace PRJRedeJogos_37277
                         <div class='DivisaoUsuario'>
                            <img src='images/bandeira.png'/ class='Favoritos'>
                            <img src='images/icon.png'/ class='iconperfil'>
-                               <h3>{dados.GetString("nm_apelido")}<h3/>
+                               <h3> {dados.GetString("nm_apelido")} </h3>
                                 <p class='txtUsuario'>{dados.GetString("ds_usuario")}</p>
                                 <div class='Estrelinhas'>
                                     <img src='images/estrela.png' class='FotoEstrelinha'/>
@@ -67,7 +66,7 @@ namespace PRJRedeJogos_37277
                     {
                         litJogos.Text += $@"
                         <div class='DivisaoJogos'>
-                            <img src='images/{dados.GetInt32("cd_jogo")}.jpg'/>
+                            <img src='images/{dados.GetInt32("cd_jogo")}.jpg' class='imgjogo'/>
                                 <p>{dados.GetString("nm_jogo")}</p>
                         </div>";
                     }
@@ -80,6 +79,7 @@ namespace PRJRedeJogos_37277
                 throw new Exception("Não foi possivel fazer a consulta de Jogos");
             }
             finally { conexao.Close(); }
+
         }
     }
 }

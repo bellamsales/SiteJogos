@@ -11,7 +11,7 @@ namespace PRJRedeJogos_37277
 {
 
 
-    public partial class index
+    public partial class index1
     {
 
         /// <summary>

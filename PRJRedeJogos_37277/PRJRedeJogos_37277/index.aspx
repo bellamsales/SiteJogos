@@ -1,20 +1,21 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="PRJRedeJogos_37277.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="PRJRedeJogos_37277.index1" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
-        <link href="frufru.css" rel="stylesheet"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <link rel="stylesheet" media="(max-width: 800px)" href="frufru.css"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+            <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet"/>
+            <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+            <link href="frufru.css" rel="stylesheet"/>
             <title>Rede Jogos</title>
 </head>
 <body>
-        <form id="form1" runat="server">
-       
+    <form id="form1" runat="server">
             <header>
                 <a href="index.aspx"><img src="images/logo.png" class="logo"/></a>
                 <input type="text" placeholder=" Pesquisar" />
@@ -37,7 +38,7 @@
             <img src="images/reticencias.png" class="Pontinhos"/>
 
 
-              <h2 class="jogos">Jogos em Destaque</h2>
+              <h2 class="H2DoJogo">Jogos em Destaque</h2>
            <section>            
     <%--           <div class="divisao2">
                   <img src="images/left4dead.jpg"/>
@@ -49,7 +50,6 @@
                <asp:Literal ID="litJogos" runat="server"></asp:Literal>
            </section>
            <img src="images/reticencias.png" class="Pontinhos"/>
-
-        </form>
+    </form>
 </body>
 </html>
